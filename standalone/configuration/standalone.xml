@@ -138,8 +138,7 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jndi-name="java:jboss/datasources/KeycloakDS" 
-                     pool-name="KeycloakDS" enabled="true" use-java-context="true" statistics-enabled="${wildfly.datasources.statistics-enabled:${wildfly.statistics-enabled:false}}">
+                <datasource jndi-name="java:jboss/datasources/KeycloakDS" pool-name="KeycloakDS" enabled="true" use-java-context="true" statistics-enabled="${wildfly.datasources.statistics-enabled:${wildfly.statistics-enabled:false}}">
                     <connection-url>jdbc:postgresql://localhost:5432/bmf_uaa</connection-url>
                     <driver>postgresql</driver>
                     <pool>
@@ -583,10 +582,10 @@
     </profile>
     <interfaces>
         <interface name="management">
-            <inet-address value="${jboss.bind.address.management:161.35.127.196}" />
+            <inet-address value="${jboss.bind.address.management:41.59.225.108}" />
         </interface>
         <interface name="public">
-            <inet-address value="${jboss.bind.address:161.35.127.196}" />
+            <inet-address value="${jboss.bind.address:41.59.225.108}" />
         </interface>
     </interfaces>
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
